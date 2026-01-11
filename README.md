@@ -236,22 +236,22 @@ Use these credentials to log in for the first time:
 
 ```bash
 store-rating-app
-├── client                                 # Frontend (React + Vite)
-│   ├── public
+├── client/                                # Frontend (React + Vite)
+│   ├── public/
 │   │   └── logo.png
-│   ├── src
-│   │   ├── api                            # Axios configuration
+│   ├── src/
+│   │   ├── api/                           # Axios configuration
 │   │   │   └── axios.js
-│   │   ├── components                     # Reusable UI (Navbar, Cards, Modals)
+│   │   ├── components/                    # Reusable UI (Navbar, Cards, Modals)
 │   │   │   ├── AddStoreForm.jsx
 │   │   │   ├── BootstrapModal.jsx
 │   │   │   ├── ChangePasswordModal.jsx
 │   │   │   ├── Navbar.jsx
 │   │   │   └── StoreCard.jsx
-│   │   ├── context                        # Auth Context (Global State)
+│   │   ├── context/                       # Auth Context (Global State)
 │   │   │   └── AuthContext.jsx
-│   │   ├── pages                          # Login, Signup, Dashboard Wrapper
-│   │   │   ├── dashboards                 # Role-specific Dashboard Views
+│   │   ├── pages/                         # Login, Signup, Dashboard Wrapper
+│   │   │   ├── dashboards/                # Role-specific Dashboard Views
 │   │   │   │   ├── AdminDashboard.jsx
 │   │   │   │   ├── OwnerDashboard.jsx
 │   │   │   │   └── UserDashboard.jsx 
@@ -268,21 +268,21 @@ store-rating-app
 │   └── vite.config.js
 │
 │
-├── server                                 # Backend (Node + Express)
-│   ├── config                             # Database Connection
+├── server/                                # Backend (Node + Express)
+│   ├── config/                            # Database Connection
 │   │   └── db.js
-│   ├── controllers                        # Business Logic (Auth, Stores, Users)
+│   ├── controllers/                       # Business Logic (Auth, Stores, Users)
 │   │   ├── authController.js
 │   │   ├── storeController.js
 │   │   └── userController.js
-│   ├── middleware                         # Auth & RBAC Middleware
+│   ├── middleware/                        # Auth & RBAC Middleware
 │   │   └── authMiddleware.js
-│   ├── models                             # Sequelize Models (User, Store, Rating)
+│   ├── models/                            # Sequelize Models (User, Store, Rating)
 │   │   ├── index.js
 │   │   ├── Rating.js
 │   │   ├── Store.js
 │   │   └── User.js
-│   ├── routes                             # API Endpoint Definitions
+│   ├── routes/                            # API Endpoint Definitions
 │   │   ├── authRoutes.js
 │   │   ├── storeRoutes.js
 │   │   └── userRoutes.js
